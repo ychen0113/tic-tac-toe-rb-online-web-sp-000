@@ -109,7 +109,9 @@ end
 
 
 def play(board)
-
+turn_count(board).each do |play|
+  turn(play)
+  
 
 
   if won?(board)
