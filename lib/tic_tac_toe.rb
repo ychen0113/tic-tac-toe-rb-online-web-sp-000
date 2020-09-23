@@ -109,9 +109,15 @@ end
 
 
 def play(board)
-  round = 02
-  while round < 9 
+  round = 0
+  while round < 9 && !won?(board) && !draw?(board)
   turn(board)
   round += 1 
   end
+  if won?(board)
+    puts "winner is #{winner(board)}"
+  end
+  if draw?(board)
+    puts "the game is draw"
+  end 
 end
