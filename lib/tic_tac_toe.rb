@@ -110,10 +110,10 @@ end
 
 def play(board)
   round = 1
-  round.each do |round|
-    turn(round)
+  round.each do |i|
+    turn(i)
     break if round > 9 || over?(board)
-    round += 1
+    i += 1
   end 
   if won?(board)
     puts "Congratulations #{winner(board)}!"
