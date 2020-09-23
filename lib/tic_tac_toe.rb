@@ -110,7 +110,9 @@ end
 
 def play(board)
   round = 0
-  while round < 9 && !won?(board) && !draw?(board)
+  while true
+  if round > 9 || over?(board)
+    break
   turn(board)
   round += 1
   end
