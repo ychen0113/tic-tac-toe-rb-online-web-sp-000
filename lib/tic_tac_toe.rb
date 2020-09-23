@@ -110,7 +110,7 @@ end
 
 def play(board)
   round = 1
-  round.each do 
+  round.each do |round|
     turn(round)
     break if round > 9 || over?(board)
     round += 1
