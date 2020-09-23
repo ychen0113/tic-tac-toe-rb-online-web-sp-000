@@ -112,9 +112,7 @@ def play(board)
   round = 0
   while round < 9 && !won?(board) && !draw?(board)
   turn(board)
-  if !over(baord)
   round += 1
-  end 
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
