@@ -109,12 +109,11 @@ end
 
 
 def play(board)
-turn_count(board).each do |play|
-  turn(play)
-  break if over?(board)
-end 
-
-
+  round = 0
+  while round < 9 && !won?(board) && !draw?(board)
+  turn(board)
+  round += 1
+  end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   end
