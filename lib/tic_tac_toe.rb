@@ -115,9 +115,9 @@ def play(board)
   round += 1 
   end
   if won?(board)
-    puts "winner is #{winner(board)}"
+    puts "Congratulations #{winner(board)}!"
   end
   if draw?(board)
-    puts "the game is draw"
+    puts "It's a Draw!"
   end 
 end
