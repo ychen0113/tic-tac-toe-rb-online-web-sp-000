@@ -109,11 +109,12 @@ end
 
 
 def play(board)
-  round = 0
-  while round < 9 && !won?(board) && !draw?(board)
-  turn(board)
-  round += 1
-  end
+  round = 1
+  round.each do 
+    turn(round)
+    break if round > 9 || over?(board)
+    round += 1
+  end 
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   end
