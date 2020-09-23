@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-09-23T21:17:24+00:00">2020-09-23T21:17:24+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-09-23T21:21:01+00:00">2020-09-23T21:21:01+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">89.55%</span></span>
+    (<span class="covered_percent"><span class="yellow">88.41%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         18.0
+         15.1
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>1</b> files in total.
-    <b>67</b> relevant lines. 
-    <span class="green"><b>60</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed </span>
+    <b>69</b> relevant lines. 
+    <span class="green"><b>61</b> lines covered</span> and
+    <span class="red"><b>8</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#2b1cb072b2f90afc3701f64306b9ba45a571fd33" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
-        <td class="yellow strong">89.55 %</td>
+        <td class="yellow strong">88.41 %</td>
         <td>124</td>
-        <td>67</td>
-        <td>60</td>
-        <td>7</td>
-        <td>18.0</td>
+        <td>69</td>
+        <td>61</td>
+        <td>8</td>
+        <td>15.1</td>
       </tr>
       
     </tbody>
@@ -79,11 +79,11 @@
         <div class="source_table" id="2b1cb072b2f90afc3701f64306b9ba45a571fd33">
   <div class="header">
     <h3>lib/tic_tac_toe.rb</h3>
-    <h4><span class="yellow">89.55 %</span> covered</h4>
+    <h4><span class="yellow">88.41 %</span> covered</h4>
     <div>
-      <b>67</b> relevant lines. 
-      <span class="green"><b>60</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <b>69</b> relevant lines. 
+      <span class="green"><b>61</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
     </div>
   </div>
   
@@ -408,26 +408,26 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="54">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="4" data-linenumber="54">
+          <span class="hits">4</span>
           
           <code class="ruby">  turn = 0</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="55">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="4" data-linenumber="55">
+          <span class="hits">4</span>
           
           <code class="ruby">  board.each do |i| </code>
         </li>
       
-        <li class="covered" data-hits="144" data-linenumber="56">
-          <span class="hits">144</span>
+        <li class="covered" data-hits="36" data-linenumber="56">
+          <span class="hits">36</span>
           
           <code class="ruby">  if i != &quot; &quot;</code>
         </li>
       
-        <li class="covered" data-hits="32" data-linenumber="57">
-          <span class="hits">32</span>
+        <li class="covered" data-hits="5" data-linenumber="57">
+          <span class="hits">5</span>
           
           <code class="ruby">  turn += 1</code>
         </li>
@@ -444,8 +444,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="60">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="4" data-linenumber="60">
+          <span class="hits">4</span>
           
           <code class="ruby">  return turn</code>
         </li>
@@ -759,37 +759,37 @@
         <li class="covered" data-hits="12" data-linenumber="112">
           <span class="hits">12</span>
           
-          <code class="ruby">turn_count(board).each do |play|</code>
+          <code class="ruby">  round = 1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="113">
+        <li class="covered" data-hits="12" data-linenumber="113">
+          <span class="hits">12</span>
           
-          
-          <code class="ruby">  turn(play)</code>
+          <code class="ruby">  round.each do </code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="114">
           
           
-          <code class="ruby">  break if over?(board)</code>
+          <code class="ruby">    turn(round)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="115">
+        <li class="missed" data-hits="0" data-linenumber="115">
           
           
-          <code class="ruby">end </code>
+          <code class="ruby">    break if round &gt; 9 || over?(board)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="116">
+        <li class="missed" data-hits="0" data-linenumber="116">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    round += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="117">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end </code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="118">
