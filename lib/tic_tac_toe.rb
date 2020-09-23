@@ -113,6 +113,7 @@ def play(board)
   while true
   if round > 9 || over?(board)
     break
+  end 
   turn(board)
   round += 1
   end
